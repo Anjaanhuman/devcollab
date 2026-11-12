@@ -133,4 +133,3 @@ For custom domains, set `CLIENT_ORIGIN` and `PUBLIC_APP_URL` to the final HTTPS 
 client/  React application, pages, contexts, API client, and Vite configuration
 server/  Express API, Mongoose models, routes, auth, Socket.IO, and integrations
 ```
-

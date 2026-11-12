@@ -1,0 +1,19 @@
+{
+  "name": "devcollab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A developer collaboration workspace.",
+  "workspaces": ["client", "server"],
+  "overrides": {
+    "dompurify": "3.4.17"
+  },
+  "engines": { "node": ">=20.19.0" },
+  "scripts": {
+    "dev:client": "npm run dev --workspace client",
+    "dev:server": "npm run dev --workspace server",
+    "dev:runner": "node runner/src/server.js",
+    "build": "npm run build --workspace client",
+    "start": "npm run start --workspace server",
+    "seed:admin": "npm run seed:admin --workspace server"
+  }
+}
